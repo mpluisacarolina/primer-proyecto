@@ -1,3 +1,4 @@
+/*Estilos Generales*/
 body {
     background: #d1defa;
     font-family: sans-serif, Arial, Helvetica;
@@ -19,30 +20,62 @@ body {
     grid-template-rows: 100px 70px auto 70px;
 }
 
+/*Estilos de la Cabecera*/
 .header {
     grid-area: header;
-    border: 5px solid black;
-    background: lightcoral;
+    background: white;
+    text-align: left;
+    font-style: italic;
+    display: flex;
+    justify-content: center;
+
 }
 
+.logo {
+    background: linear-gradient(90deg, #03228f 10%, #0e73e4 100%);
+    width: 40px;
+    height: 40px;
+    border-radius: 300px;
+    margin-top: 30px;
+}
+
+.play{
+    width: 0;
+    height: 0;
+    margin-top: 15px;
+    margin-left: 16px;
+    border-left: 12px solid white;
+    border-top: 6px solid transparent;
+    border-bottom: 6px solid transparent;
+}
+
+.header h1 {
+    margin-left: 10px;
+    margin-top: 30px;
+}
+
+/*Estilos de la Barra de Navegación*/
 .nav {
     grid-area: nav;
     border: 5px solid red;
     background: lightgray;
 }
 
+/*Estilos del contenido*/
 .content {
     grid-area: content;
     border: 5px solid green;
     background: lightgreen;
 }
 
+/*Estilos de la Barra Lateral*/
 .lateral {
     grid-area: lateral;
     border: 5px solid brown;
     background: lightsalmon;
 }
 
+/*Estilos del Pie de Página*/
 .footer {
     grid-area: footer;
     border: 5px solid black;
